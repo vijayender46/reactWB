@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Staatliches&display=swap');
 
-body {font-family: 'Lato', sans-serif; font-weight:600; }
+body {font-family: 'Lato', sans-serif; font-weight:600; background:#ccc; }
 h1, h2 {font-family: 'Staatliches', cursive;}
 
 
@@ -26,16 +26,16 @@ h1, h2 {font-family: 'Staatliches', cursive;}
 .videoBackdrop {content:''; top:0; left:0; background:#000; position: fixed; opacity:0.2; z-index:1; height:100%; width:100%;}
 .homePage .brandHome img {
   margin-top: 30px;
-  max-width: 400px;
+  max-width: 300px;
   display: inline-block;
 }
 
 .brandHome h1 {
   color: #fff;
   letter-spacing: 1px;
-  max-width: 760px;
+  max-width: 740px;
   margin: 30px auto 0 auto;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -81,4 +81,9 @@ h1, h2 {font-family: 'Staatliches', cursive;}
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width:570px) {
+  .homePage .brandHome img {max-width:250px;}
+  .brandHome h1 {font-size:36px;}
 }
