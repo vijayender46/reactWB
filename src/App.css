@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Staatliches&display=swap');
+
+body {font-family: 'Lato', sans-serif; font-weight:600; }
+h1, h2 {font-family: 'Staatliches', cursive;}
+
+
 .App {
   text-align: center;
 }
@@ -5,6 +11,31 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.videoBackdrop {content:''; top:0; left:0; background:#000; position: fixed; opacity:0.2; z-index:1; height:100%; width:100%;}
+.homePage .brandHome img {
+  margin-top: 30px;
+  max-width: 400px;
+  display: inline-block;
+}
+
+.brandHome h1 {
+  color: #fff;
+  letter-spacing: 1px;
+  max-width: 760px;
+  margin: 30px auto 0 auto;
+  font-size: 65px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +57,21 @@
 
 .App-link {
   color: #61dafb;
+}
+.homePage, .wb-navbar {
+  position: relative;
+  z-index: 9;
+}
+.wb-navbar a.navbar-brand img {
+  max-width: 150px;
+}
+
+.wb-navbar li.nav-item a {
+  font-size: 13px;
+  color: #fff !important;
+}
+.wb-navbar li.nav-item .dropdown-menu a {
+  color:#222 !important;
 }
 
 @keyframes App-logo-spin {
