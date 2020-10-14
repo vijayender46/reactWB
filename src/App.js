@@ -9,6 +9,7 @@ import FindDestination from './FindDestination';
 import About from './About';
 import ContactUs from './ContactUs';
 import Error from './Error';
+// import Sliderlist from './Sliderlist';
 import Navbar from './Navbar';
 import { Switch, Route, Redirect } from 'react-router-dom';
  
@@ -21,7 +22,7 @@ const App = () => {
       <Route exact path="/" component = { Home } />
       <Route exact path="/FindDestination" component = { FindDestination } />
       <Route exact path="/About" component = { About } />
-      <Route exact path="/ContactUs" component = { ContactUs } />
+      <Route exact path="/ContactUs" component = { ContactUs } />      
       <Route component = {Error} /> 
       <Redirect to="/" />
     </Switch>

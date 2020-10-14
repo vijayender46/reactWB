@@ -1,6 +1,7 @@
- import React from 'react';
- import Videobg from '../src/videos/home-bg.mp4'; 
- import Wblogo from '../src/images/logo-wanderer.svg';
+import React from 'react';
+import Videobg from '../src/videos/home-bg.mp4'; 
+import Wblogo from '../src/images/logo-wanderer.svg';
+import Sliderlist from'./Sliderlist'
 
  const Home = () => {
      return(
@@ -13,6 +14,7 @@
                 <h1>“Never let your memories be greater than your dreams.”</h1>
             </div>
  
+             <Sliderlist />
                     
               </div>
              <div className="videoBackdrop"></div>   
