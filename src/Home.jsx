@@ -6,15 +6,17 @@ import Sliderlist from'./Sliderlist'
  const Home = () => {
      return(
          <>
-              <div className="container pt-5 homePage text-center">
+              <div className="pt-5 homePage text-center">
 
              <div className="brandHome">
                 <img src={Wblogo} alt="Wanderer Bucket" />
 
                 <h1>“Never let your memories be greater than your dreams.”</h1>
             </div>
- 
-             <Sliderlist />
+
+            <div className="homeCategories">
+                <Sliderlist />
+             </div>
                     
               </div>
              <div className="videoBackdrop"></div>   

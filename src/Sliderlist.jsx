@@ -2,6 +2,7 @@ import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import CategoryWb from './CategoryWb';
 
 //Owl Carousel Settings
 const options = {
@@ -25,7 +26,7 @@ const options = {
             items: 3,
         },
         1000: {
-            items: 5,
+            items: 4,
         }
     },
   };
@@ -35,15 +36,12 @@ const Sliderlist = () => {
    return(
        <>
         <div className="carouselComponent">
-            <h1>Reactjs OwlCarousel Working</h1>
+             
             <OwlCarousel className="slider-items owl-carousel" {...options}>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
-                <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/></div>
+                <div className="item">
+                    <CategoryWb />
+                </div>
+                
             </OwlCarousel>
         </div>
        </>

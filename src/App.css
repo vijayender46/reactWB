@@ -33,10 +33,71 @@ h1, h2 {font-family: 'Staatliches', cursive;}
 .brandHome h1 {
   color: #fff;
   letter-spacing: 1px;
-  max-width: 740px;
+  max-width:500px;
   margin: 30px auto 0 auto;
-  font-size: 55px;
+  font-size:30px;
 }
+
+.wbCategoryBlock img {
+  float: left;
+  width: 100%;
+}
+
+.wbCategoryBlock .catInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.wbCategoryBlock .catInfo h2 {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  padding-bottom:6px;
+  font-family: 'Lato', sans-serif; font-weight:600;
+}
+
+.wbCategoryBlock .catInfo p {
+  color: #fff;
+  font-size: 11px;
+  text-align: left;
+  padding: 0px 10px;
+  margin:0 0 6px 0;
+
+}
+
+.wbCategoryBlock .catInfo a {
+  color: orange;
+  text-align: left;
+  padding-bottom:6px;
+  float: left;
+  padding-left: 10px;
+  font-size: 11px;
+}
+
+.wbCategoryBlock {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.homeCategories {
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  width: 70%;
+}
+.homeCategories .owl-nav, .homeCategories .owl-dots {display: none;}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
